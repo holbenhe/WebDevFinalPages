@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web development final project - Henry Holben</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+        $('#button').click(function(e) {  
+            var inputvalue = $("#input").val();
+            window.location.replace(" https://www.abebooks.com/servlet/SearchResults?cm_sp=SearchF-_-merch-_-&isbn=&an=&tn="+inputvalue);
+
+        });
+    });
+    </script> 
+
+    <style>
+        body {
+            background-color: grey;
+        }
+        H1 {
+            color: lightblue;
+            position: relative;
+            left: 40%;
+           
+        }
+
+        #title {
+            display:flex;
+            flex-direction: column;
+            position: relative;
+            background-color: gray;
+        }
+
+        #textbookInput {
+            position: relative;
+        }
+
+        #info {
+            color: white;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div id="title"> 
+        <H1>Textbook Wizard</H1>
+    </div>
+    
+    <div id="account">
+        <a href="./accountPage.html" id="info">Create an account (Save your credit card info!)</a>
+    </div>
+    <div id="info">
+        <p>
+            Welcome to Textbook Wizard! Here you will be able to find
+            where to buy the cheapest textbook that you are looking for.
+            In the text field below input the name of the textbook that you are looking for.
+        </p>
+    </div>
+    <div id="textbookInput">
+        <form id="info">
+            Name of textbook:<br> <input type="text" name="textbookName" id="input">
+            
+            <input type="submit" value="Find Textbooks">
+         </form>
+    </div>
+    <div>
+        <p id="info"> Here are some possible websites</p>
+        <a href="https://www.abebooks.com/">
+            <img alt="Abe Books" src="./Images/AbeBooksLogo.png"
+            width=150" height="70">
+         </a>
+         <button>add textbook to cart</button>
+         <br>
+         <a href="https://www.amazon.com/">
+            <img alt="Amazon" src="Images/AmazonLogo.png"
+            width=150" height="70">
+         </a>
+         <button>add textbook to cart</button>
+         <br>
+         <a href="https://www.barnesandnoble.com/">
+            <img alt="Barnes and Noble" src="Images/BarnesAndNobleLogo.png"
+            width=150" height="70">
+         </a>
+         <button>add textbook to cart</button>
+         <br>
+         <a href="https://www.bigwords.com/">
+            <img alt="Big Words" src="Images/BigWordsLogo.png"
+            width=150" height="70">
+         </a>
+         <button>add textbook to cart</button>
+         <br>
+         <a href="https://booksrun.com/">
+            <img alt="Books Run" src="Images/BooksRunLogo.png"
+            width=150" height="70">
+         </a>
+         <button>add textbook to cart</button>
+         <br>
+         <a href="https://www.campusbooks.com/">
+            <img alt="Campus Books" src="Images/CampusBooksLogo.png"
+            width=150" height="70">
+         </a>
+         <button>add textbook to cart</button>
+         <br>
+         <a href="https://www.cheapesttextbooks.com/">
+            <img alt="Cheapest Textbooks" src="Images/CheapestTextbooks.png"
+            width=150" height="70">
+         </a>
+         <button>add textbook to cart</button>
+         <br>
+         <a href="https://www.chegg.com/books">
+            <img alt="Chegg" src="Images/CheggLogo.png"
+            width=150" height="70">
+         </a>
+         <button>add textbook to cart</button>
+         <br>
+         <a href="https://www.collegebooksdirect.com/">
+            <img alt="College Books Direct" src="Images/CollegeBooksDirectLogo.png"
+            width=150" height="70">
+         </a>
+         <button>add textbook to cart</button>
+         <br>
+         <a href="https://www.ecampus.com/">
+            <img alt="E Campus" src="Images/ECampusLogo.png"
+            width=150" height="70">
+         </a>
+         <button>add textbook to cart</button>
+         <br>
+    </div>
+
+    <div>
+        <p id="info">If you would like, leave a review on one of the websites</p>
+        <input type="checkbox" id="AbeBooks" name="AbeBooks" value="Website">
+        <label for="AbeBooks" id="info"> AbeBooks</label><br>
+        <form id="info">
+            Review:<br> <input type="text" name="websiteReview">
+            
+            <input type="submit" value="Submit">
+         </form>
+
+        <input type="checkbox" id="Amazon" name="Amazon" value="Website">
+        <label for="Amazon"" id="info"> Amazon</label><br>
+        <form id="info">
+            Review:<br> <input type="text" name="websiteReview">
+            
+            <input type="submit" value="Submit">
+         </form>
+
+        <input type="checkbox" id="barnesandnoble" name="barnesandnoble" value="Website">
+        <label for="barnesandnoble" id="info"> barnesandnoble</label><br>
+        <form id="info">
+            Review:<br> <input type="text" name="websiteReview">
+            
+            <input type="submit" value="Submit">
+         </form>
+
+        <input type="checkbox" id="bigwords" name="bigwords" value="Website">
+        <label for="bigwords" id="info"> bigwords</label><br>
+        <form id="info">
+            Review:<br> <input type="text" name="websiteReview">
+            
+            <input type="submit" value="Submit">
+         </form>
+
+        <input type="checkbox" id="booksrun" name="booksrun" value="Website">
+        <label for="booksrun" id="info"> booksrun</label><br>
+        <form id="info">
+            Review:<br> <input type="text" name="websiteReview">
+            
+            <input type="submit" value="Submit">
+         </form>
+
+        <input type="checkbox" id="campusbooks" name="campusbooks" value="Website">
+        <label for="campusbooks" id="info"> campusbooks</label><br>
+        <form id="info">
+            Review:<br> <input type="text" name="websiteReview">
+            
+            <input type="submit" value="Submit">
+         </form>
+
+        <input type="checkbox" id="cheapesttextbooks" name="cheapesttextbooks" value="Website">
+        <label for="cheapesttextbooks" id="info"> cheapesttextbooks</label><br>
+        <form id="info">
+            Review:<br> <input type="text" name="websiteReview">
+            
+            <input type="submit" value="Submit">
+         </form>
+
+        <input type="checkbox" id="Chegg" name="Chegg" value="Website">
+        <label for="Chegg" id="info"> Chegg</label><br>
+        <form id="info">
+            Review:<br> <input type="text" name="websiteReview">
+            
+            <input type="submit" value="Submit">
+         </form>
+
+        <input type="checkbox" id="collegebooksdirect" name="collegebooksdirect" value="Website">
+        <label for="collegebooksdirect" id="info"> collegebooksdirect</label><br>
+        <form id="info">
+            Review:<br> <input type="text" name="websiteReview">
+            
+            <input type="submit" value="Submit">
+         </form>
+
+        <input type="checkbox" id="ecampus" name="ecampus" value="Website">
+        <label for="ecampus" id="info"> ecampus</label><br>
+        <form id="info">
+            Review:<br> <input type="text" name="websiteReview">
+            
+            <input type="submit" value="Submit">
+         </form>
+    </div>
+</body>
+</html>
